@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Merienda", sans-serif;
+}
+.time-select,
+
+.sound-picker, 
+.player-container{
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.player-container svg {
+    position: absolute;
+    pointer-events: none;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+.time-display {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 50px;
+}
+video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10;
+    }
+
+.time-select button,
+.sound-picker button{
+    color: white;
+    width: 20%;
+    height: 10%;
+    background: none;
+    cursor: pointer;
+    outline:none;
+    border: solid white 2px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Merienda", sans-serif;
+}
+
+.time-select button:hover {
+    color: #9c9c9c;
+    background: rgb(236, 236, 236);
+    box-shadow: 0px 0px 13px #4b9fff;
+}
+
+.sound-picker button{
+    border: none;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    padding: 30px
+}
+
+.sound-picker button:nth-child(1){
+    background: #4972a1;
+}
+.sound-picker button:nth-child(2){
+    background: rgb(236, 99, 99);
+}
+
+.sound-picker button img{
+    height: 100%;
+}
+.play{
+    cursor: pointer;
+}
