@@ -27,7 +27,7 @@
     position: absolute;
     width: 45vh;
     pointer-events: none;
-    height: 50%;
+    height: 150%;
     top: 50%;
     left: 49.5%;
     transform: translate(-50%, -50%) rotate(-90deg);
@@ -40,6 +40,7 @@
     color: white;
     font-size: 50px;
 }
+
 video {
     position: fixed;
     right: 0;
@@ -91,17 +92,33 @@ video {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 720px) {
 
     .sound-picker button{
         color: white;
+        width: 70px;
+        height: 70px;
         background: none;
         cursor: pointer;
         border: solid white 1px;
         font-size: 15px;
     }
     .time-select button{
-        width: 100px;
-        height: 50px;
+        width: 6rem;
+        height: 2rem;
     }
+    .player-container svg {
+        height: 25%;
+        top: 50%;
+        left: 50%;
+    }
+    .time-select button:nth-child(2){
+        display: none;
+     }
+
+        .play{
+            cursor: pointer;
+            padding-left: 20px;
+        }
+        
   }
