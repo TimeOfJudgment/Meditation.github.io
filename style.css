@@ -12,6 +12,10 @@
     font-family: "Merienda", sans-serif;
 }
 
+.time-select{
+    height: 50%;
+}
+
 .time-select,
 .sound-picker, 
 .player-container{
